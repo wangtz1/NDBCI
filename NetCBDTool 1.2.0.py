@@ -38,7 +38,7 @@ def update_status(ip, status, message="", color=None):
         device_status[ip] = (status, message, color)
         # 清屏并重新显示所有状态
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("\n======= 命令批量下发工具1.2 - 执行状态 =======\n")
+        print("\n======= NetCBDTool - 执行状态 =======\n")
         
         # 显示设备状态表格
         print(f"{COLORS['CYAN']}{'IP地址':<15} {'状态':<10} {'详细信息':<40}{COLORS['RESET']}")
@@ -49,7 +49,7 @@ def update_status(ip, status, message="", color=None):
             print(f"{color_code}{dev_ip:<15} {dev_status:<10} {dev_msg:<40}{COLORS['RESET']}")
 
 def get_user_input():
-    print("\n======= NetCBDTool 1.2 =======")
+    print("\n======= NetCBDTool =======")
     print("   by:wangtz1 Mail:zvrz@163.com \n")
     
     filename = input("1.请输入文件名，回车确定。不指定文件名将执行（批量配置模板.xlsx）: ").strip()
