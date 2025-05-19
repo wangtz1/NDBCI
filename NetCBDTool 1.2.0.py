@@ -50,7 +50,7 @@ def update_status(ip, status, message="", color=None):
 
 def get_user_input():
     print("\n======= NetCBDTool =======")
-    print("   by:wangtz1 Mail:zvrz@163.com \n")
+    print("by:wangtz1 Mail:zvrz@163.com \n")
     
     filename = input("1.请输入文件名，回车确定。不指定文件名将执行（批量配置模板.xlsx）: ").strip()
     if not filename:
